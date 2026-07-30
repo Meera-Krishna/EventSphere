@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | EventSphere</title>
+
+<link rel="stylesheet"
+href="assets/css/admin.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<a href="index.html" class="logo">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+EventSphere Admin
+
+</a>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="events.html">Events</a>
+
+<a href="history.html">History</a>
+
+<a href="admin-login.html" class="active">Admin</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<button
+id="logoutBtn"
+style="
+padding:10px 20px;
+background:#ef4444;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:15px;
+font-weight:600;
+transition:0.3s;
+"
+onmouseover="this.style.background='#dc2626'"
+onmouseout="this.style.background='#ef4444'">
+
+Logout
+
+</button> 
+<section class="dashboard">
+
+<div class="container">
+
+<h1>
+
+Admin Dashboard
+
+</h1>
+
+<div class="stats">
+
+<div class="stat-card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h2 id="totalEvents">
+
+12
+
+</h2>
+
+<p>Total Events</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-ticket"></i>
+
+<h2 id="totalBookings">
+
+0
+
+</h2>
+
+<p>Total Bookings</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-users"></i>
+
+<h2>
+
+1250
+
+</h2>
+
+<p>Visitors</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-star"></i>
+
+<h2>
+
+4.9
+
+</h2>
+
+<p>Rating</p>
+
+</div>
+
+</div>
+
+<div class="add-event">
+
+<h2>
+
+Add New Event
+
+</h2>
+
+<form id="eventForm">
+
+<input
+type="text"
+id="eventTitle"
+placeholder="Event Name"
+required>
+
+<input
+type="text"
+id="eventCategory"
+placeholder="Category"
+required>
+
+<input
+type="text"
+id="eventLocation"
+placeholder="Location"
+required>
+
+<input
+type="date"
+id="eventDate"
+required>
+
+<input
+type="text"
+id="eventPrice"
+placeholder="Price"
+required>
+
+<input
+type="url"
+id="eventImage"
+placeholder="Image URL"
+required>
+
+<button type="submit">
+
+Add Event
+
+</button>
+
+</form>
+
+</div>
+
+<h2 class="table-title">
+
+Added Events
+
+</h2>
+
+<div id="eventList">
+
+</div>
+
+</div>
+
+</section>
+
+<script src="assets/js/admin.js"></script>
+
+</body>
+
+</html>

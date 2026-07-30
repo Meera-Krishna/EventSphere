@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | EventSphere</title>
+
+    <link rel="stylesheet"
+          href="assets/css/auth.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="background">
+
+    <div class="circle one"></div>
+
+    <div class="circle two"></div>
+
+    <div class="circle three"></div>
+
+</div>
+
+<div class="login-container">
+
+    <div class="login-card">
+
+        <a href="index.html" class="logo">
+
+            <i class="fa-solid fa-calendar-days"></i>
+
+            EventSphere
+
+        </a>
+
+        <h1>
+
+            Create Account 🚀
+
+        </h1>
+
+        <p>
+
+            Join EventSphere and discover amazing events.
+
+        </p>
+
+        <form id="registerForm">
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-user"></i>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Full Name"
+                    required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                    maxlength="10"
+                    required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                    required>
+
+                <span class="toggle-password">
+
+                    <i class="fa-solid fa-eye"></i>
+
+                </span>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm Password"
+                    required>
+
+                <span class="toggle-confirm">
+
+                    <i class="fa-solid fa-eye"></i>
+
+                </span>
+
+            </div>
+
+            <div class="strength">
+
+                <div id="strengthBar"></div>
+
+            </div>
+
+            <small id="strengthText">
+
+                Password Strength
+
+            </small>
+
+            <div class="options">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        required>
+
+                    I agree to the Terms & Conditions
+
+                </label>
+
+            </div>
+
+            <button
+                type="submit"
+                class="login-btn">
+
+                Create Account
+
+            </button>
+
+        </form>
+
+        <div class="bottom-text">
+
+            Already have an account?
+
+            <a href="login.html">
+
+                Login
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="assets/js/register.js"></script>
+
+</body>
+
+</html>

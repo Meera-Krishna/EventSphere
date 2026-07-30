@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Book Event | EventSphere</title>
+
+<link rel="stylesheet"
+href="assets/css/booking.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<a href="index.html" class="logo">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+EventSphere
+
+</a>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="events.html">Events</a>
+
+<a href="history.html">History</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="booking-section">
+
+<div class="container">
+
+<div class="booking-card">
+
+<div class="event-preview">
+
+<img
+id="eventImage"
+src=""
+alt="Event">
+
+</div>
+
+<div class="booking-info">
+
+<h2 id="eventName">
+
+Loading...
+
+</h2>
+
+<div class="details">
+
+<p>
+
+<i class="fa-solid fa-location-dot"></i>
+
+<span id="eventLocation"></span>
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-calendar"></i>
+
+<span id="eventDate"></span>
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-ticket"></i>
+
+<span id="eventCategory"></span>
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-indian-rupee-sign"></i>
+
+<span id="eventPrice"></span>
+
+</p>
+
+</div>
+
+<form id="bookingForm">
+
+<input
+
+type="text"
+
+id="customerName"
+
+placeholder="Full Name"
+
+required>
+
+<input
+
+type="email"
+
+id="customerEmail"
+
+placeholder="Email Address"
+
+required>
+
+<input
+
+type="tel"
+
+id="customerPhone"
+
+placeholder="Phone Number"
+
+maxlength="10"
+
+required>
+
+<input
+
+type="number"
+
+id="tickets"
+
+placeholder="Number of Tickets"
+
+min="1"
+
+max="10"
+
+required>
+
+<button type="submit">
+
+Confirm Booking
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="assets/js/booking.js"></script>
+
+</body>
+
+</html>

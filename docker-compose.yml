@@ -1,0 +1,9 @@
+
+
+services:
+  eventsphere:
+    build: .
+    container_name: eventsphere-container
+    ports:
+      - "8081:80"
+    restart: unless-stopped
