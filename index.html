@@ -233,11 +233,20 @@
                     hackathons and sports events happening around you.
                 </p>
 
+                <div class="search-container">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search events..."
+        onkeyup="searchEvents()"
+    >
+</div>
+
             </div>
 
             <div class="event-grid">
 
-                <div class="event-card">
+                <div class="event-card searchable-event">
 
                     <img src="assets/images/events/compressed-event1.jpg" alt="Music Festival">
 
@@ -276,7 +285,7 @@
 
                 </div>
 
-                <div class="event-card">
+                <div class="event-card searchable-event">
 
                     <img src="assets/images/events/compressed-event2.jpg" alt="Tech Conference">
 
@@ -315,7 +324,7 @@
 
                 </div>
 
-                <div class="event-card">
+                <div class="event-card searchable-event">
 
                     <img src="assets/images/events/compressed-event3.jpg" alt="Startup Meetup">
 
@@ -840,6 +849,28 @@
     <!-- ===================== JAVASCRIPT ===================== -->
 
     <script src="assets/js/script.js"></script>
+
+    <script>
+function searchEvents(){
+
+    let input = document.getElementById("searchInput").value.toLowerCase();
+
+    let events = document.querySelectorAll(".searchable-event");
+
+    events.forEach(function(event){
+
+        let title = event.querySelector("h3").innerText.toLowerCase();
+
+        if(title.includes(input)){
+            event.style.display="block";
+        }else{
+            event.style.display="none";
+        }
+
+    });
+
+}
+</script>
 
 </body>
 
