@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: eventsphere
-        image: meerakrishna07/eventsphere:v2.0.0
+        image: meerakrishna07/eventsphere:v3.0.0
         imagePullPolicy: Always
         ports:
         - containerPort: 80
