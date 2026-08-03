@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t meerakrishna07/eventsphere:v1.0.0 .'
+                sh 'docker build -t meerakrishna07/eventsphere:v2.0.0 .'
             }
         }
 
@@ -25,7 +25,7 @@ pipeline {
 
                     sh '''
                     echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
-                    docker push meerakrishna07/eventsphere:v1.0.0
+                    docker push meerakrishna07/eventsphere:v2.0.0
                     '''
                 }
             }
