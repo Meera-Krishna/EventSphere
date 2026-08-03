@@ -1750,6 +1750,28 @@ transition:.35s ease;
 
 }
 
+.search-container{
+    display:flex;
+    justify-content:center;
+    margin:40px 0;
+}
+
+.search-container input{
+    width:420px;
+    padding:14px 20px;
+    border:none;
+    outline:none;
+    border-radius:40px;
+    font-size:16px;
+    background:#1f2937;
+    color:white;
+    transition:0.3s;
+}
+
+.search-container input:focus{
+    box-shadow:0 0 15px #00c3ff;
+}
+
 /*==========================================
             END
 ==========================================*
