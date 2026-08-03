@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eventsphere-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eventsphere
+  template:
+    metadata:
+      labels:
+        app: eventsphere
+    spec:
+      containers:
+      - name: eventsphere
+        image: meerakrishna07/eventsphere:v1.0.0
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
